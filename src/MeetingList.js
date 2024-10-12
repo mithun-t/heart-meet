@@ -13,7 +13,7 @@ const MeetingList = () => {
     }
   }, []);
 
-  const addMeeting = (newMeeting) => {
+  const addMeeting = (neMeeting) => {
     const updatedMeetings = [...meetings, newMeeting];
     setMeetings(updatedMeetings);
     localStorage.setItem("meetings", JSON.stringify(updatedMeetings));
